@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 REMOTE_HOST="10.0.22.12" # Remote IP
@@ -7,7 +6,7 @@ DB_NAME="kasutajatugi" # DB nimi
 DB_USER="kasutajatugi" # DB kasutaja
 DB_PASS="parool" # DB parool
 LOCAL_WEB_DIR="/var/www/kasutajatugi" # Kaust millest tehakse koopia localis
-BACKUP_DIR="./backups" # Salvestab backups kausta, alates sellest kaustast kus oleme
+BACKUP_DIR="/var/backups" # Salvestab backups kausta
 DATE=$(date +"%Y-%m-%d_%H-%M") # Aeg
 TMP_DIR="$HOME/backup_temp_$DATE" # Ajutine kaust
 BACKUP_FILE="varukoopia_${DATE}.tar.gz" # Lisab aja failile
